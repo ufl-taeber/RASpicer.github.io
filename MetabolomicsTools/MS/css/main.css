@@ -56,23 +56,19 @@ a:hover {
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
   background-color: #719CC0 !important;
+  color: #333 !important;
 }
 
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
   background-color: #719CC0 !important;
+  color: #333 !important;
 }
 
 .google-visualization-table-tr-sel,
 .google-visualization-table-tr-sel td,
 .google-visualization-table-tr-sel-nonstrict {
-  background-color: #333 !important;
-}
-
-.google-visualization-table-tr-over,
-.google-visualization-table-tr-over td,
-.google-visualization-table-tr-over-nonstrict {
   background-color: #333 !important;
 }
 
