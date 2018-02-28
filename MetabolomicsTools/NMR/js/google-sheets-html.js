@@ -16,7 +16,7 @@ var visualization;
 
 function drawVisualization() {
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1a096jlzbAwTxUdvTtJB2bwfkBRdDcMKrkywS8YZf344&output=html&gid=1890638114');
-    query.setQuery('SELECT A, C, D, G, P label A "Software", C "Functionality", D "Instrument Data Type", G "Approaches", P "Last Updated" ');
+    query.setQuery('SELECT A, C, D, E, R, P label A "Software", C "Functionality", D "Instrument Data Type", E "Approaches", R "Website" P "Last Updated" ');
     query.send(handleQueryResponse);
 }
 
