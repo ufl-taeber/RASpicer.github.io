@@ -2,9 +2,10 @@
     Site Design CSS
 ***************************/
 
-body{
-background-color: #000000;
+body {
+    background-color: #d1fcee;
 }
+
 
 #box {
   margin: auto;
@@ -15,10 +16,11 @@ background-color: #000000;
   height: auto;
   width: auto;
   padding: 2em;
-  color: #333;
+  color: #719CC0;
   text-align: center;
   overflow: visible;
 }
+
 
 h1 {
   font-family: 'Open Sans', sans-serif;
