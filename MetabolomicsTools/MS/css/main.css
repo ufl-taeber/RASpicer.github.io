@@ -1,6 +1,10 @@
 /***************************
     Site Design CSS
 ***************************/
+body {
+    background-color: #d1fcee;
+}
+
 
 #box {
   margin: auto;
@@ -11,7 +15,7 @@
   height: auto;
   width: auto;
   padding: 2em;
-  color: #77A6F7;
+  color: #719CC0;
   text-align: center;
   overflow: visible;
 }
@@ -56,14 +60,14 @@ a:hover {
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
   background-color: #719CC0 !important;
-  color: #333 !important;
+  color: #fff !important;
 }
 
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
   background-color: #719CC0 !important;
-  color: #333 !important;
+  color: #fff !important;
 }
 
 .google-visualization-table-tr-sel,
