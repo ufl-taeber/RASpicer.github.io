@@ -49,6 +49,10 @@ a:visited,
 a:link {
     color: #d1fcee;
     text-decoration: none;
+},
+a:visited {
+   color: #d62837;
+    text-decoration: none;
 }
 
 /***************************
