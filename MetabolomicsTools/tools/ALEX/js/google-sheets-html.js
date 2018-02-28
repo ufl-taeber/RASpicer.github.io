@@ -15,8 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1a096jlzbAwTxUdvTtJB2bwfkBRdDcMKrkywS8YZf344&output=html&gid=1382414025');
-    query.setQuery('SELECT A, C, D, G, P label A "Software", C "Functionality", D "Instrument Data Type", G "Approaches", P "Last Updated" ');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1a096jlzbAwTxUdvTtJB2bwfkBRdDcMKrkywS8YZf344&output=html&range=1');
     query.send(handleQueryResponse);
 }
 
