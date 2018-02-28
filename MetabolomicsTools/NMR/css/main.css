@@ -46,13 +46,9 @@ p.small {
 
 a,
 a:visited,
-a:hover {
-  color: #333;
-  font-weight: 600;
-}
-
 a:link {
     color: #d1fcee;
+    text-decoration: none;
 }
 
 /***************************
