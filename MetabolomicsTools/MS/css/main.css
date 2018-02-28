@@ -68,20 +68,12 @@ a:hover {
 .google-visualization-table-tr-sel td,
 .google-visualization-table-tr-sel-nonstrict {
   background-color: #333 !important;
-  color: #fff !important;
 }
 
 .google-visualization-table-tr-over,
 .google-visualization-table-tr-over td,
 .google-visualization-table-tr-over-nonstrict {
   background-color: #333 !important;
-  color: #fff !important;
-}
-
-.google-visualization-table-td,
-.google-visualization-table-th {
-  border: 1px solid #333 !important;
-  color: #fff !important;
 }
 
 .google-visualization-table-tr-head,
