@@ -2,6 +2,10 @@
     Site Design CSS
 ***************************/
 
+body{
+background-color: #000000;
+}
+
 #box {
   margin: auto;
   top: 0;
@@ -43,7 +47,7 @@ p.small {
 a,
 a:visited,
 a:hover {
-  color: #333;
+  color: #77A6F7;
   font-weight: 600;
 }
 
