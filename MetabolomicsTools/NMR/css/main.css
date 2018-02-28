@@ -51,6 +51,9 @@ a:hover {
   font-weight: 600;
 }
 
+a:link {
+    color: #d1fcee;
+}
 
 /***************************
     Google Table CSS
