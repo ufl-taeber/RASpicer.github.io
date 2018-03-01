@@ -99,6 +99,11 @@ ul, li{ list-style:none; margin:0; padding:0;}/*1.1*/
 .main-menu > ul > li > a{ text-align:center;}/*2*/
 .sp-width{ width:40%;}
 
+nav {
+    background-color: #719CC0;
+}
+
+
 /***************************
     Google Table CSS
 ***************************/
