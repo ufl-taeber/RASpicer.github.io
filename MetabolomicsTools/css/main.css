@@ -2,8 +2,15 @@
     Site Design CSS
 ***************************/
 
-body {
+.header {
     background-color: #d1fcee;
+    text-align: center;
+    padding: 20px;
+}
+
+
+body {
+    background-color: #e5b0ba;
 }
 
 
