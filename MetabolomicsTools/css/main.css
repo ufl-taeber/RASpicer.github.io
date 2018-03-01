@@ -2,18 +2,17 @@
     Site Design CSS
 ***************************/
 
-.header {
-    background-color: #d1fcee;
-    text-align: center;
-    padding: 20px;
-    color: #719CC0;
+header {
+  margin: 0px;
+  padding: 20px;
+  background: #0f4880;
+  color:white;
+  overflow: auto;
 }
-
 
 body {
     background-color: #FFE2D3;
 }
-
 
 #box {
   margin: auto;
@@ -28,7 +27,6 @@ body {
   text-align: center;
   overflow: visible;
 }
-
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -60,7 +58,6 @@ a:hover {
   color: #77A6F7;
   font-weight: 600;
 }
-
 
 /***************************
     Google Table CSS
