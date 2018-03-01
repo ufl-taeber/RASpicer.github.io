@@ -3,23 +3,161 @@
 
 <html class="no-js" lang="en">
 <head>
+<style> 
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <title>MS Tools</title>
+  <title>ALEX</title>
   <meta content="List of tools developed for analysis metabolomcis data" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {background: #0f4880;color:white;}
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+</style>
 </head>
 
-<body id="background">
-  <div id="box">
-    <h1>Mass Spectrometry Data Analysis Tools</h1>
-    <script src="js/google-sheets-html.js" type="text/javascript"></script>
-    <div id="table">
-    </div>
-  </div>
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">ALEX</h1>
+<p>Version: 1</p>
+
+<h3>Website</h3>
+<a href='http://mslipidomics.info/contents/?page_id=133target='_BLANK' style="color:#0f4880">http://mslipidomics.info/contents/?page_id=133</a>
+
+<h3>Description</h3>
+<p>Analysis of Lipid Experiments (ALEX) is designed for metabolite identification of multiplexed FT MS data. Lipids are identified using the ALEX lipid database containing >20,000 lipid species. This can be searched as part of the GUI or on a web-based tool, which requires a m/z list as input. For calibration of FT MS data, the identity of a well characterised lock-mass ion must be known for the online tool. For the pipeline it can be calculated automatically, using lock mass adjustment. A three-point quadratic interpolation is used for estimating the centroid m/z values of lock mass ions. Lipids can also be quantified using the Orange software. </p>
+
+<h3>Functionality</h3>	
+<p>Annotation</p>
+
+<h3>Instrument Data Type</h3>	
+<p>DIMS/Orbitrap DIMS</p>
+
+<h3>Approaches</h3>	
+<p>Targeted,
+Lipidomics</p>
+
+<h3>Computer Skills</h3>	
+<p>Advanced</p>
+
+<h3>Software Type</h3>	
+<p>Pipeline 
+Python Package
+Web App</p>
+
+<h3>Interface</h3>	
+<p>Command line interface, Web user interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Windows XP, Windows 7, Windows 10</p>
+
+<h3>Language</h3>	
+<p>C++, Python, SQLite, PHP, Lisp</p>
+
+<h3>Dependencies</h3> 	
+<p>MSFileReader 3.1 (Thermo Scientific), Python 3.6.1</p>
+
+<h3>Input Formats - Open</h3>	
+<p>-</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>Thermo Fisher Scientific .raw</p>
+
+<h3>Published</h3>	
+<p>2013</p>
+
+<h3>Last Updated</h3>	
+<p>2017</p>
+
+<h3>License</h3>	
+<p>CC BY-NC 4.0</p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/24244551target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/24244551</a>
+
+
+
+<h3>PMID</h3>
+<p>24244551</p>
+</article>
+
+</div>
+
 </body>
 </html>
