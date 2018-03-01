@@ -11,7 +11,7 @@ header {
 }
 
 body {
-    background-color: #0f4880;
+    background-color: #d1fcee;
 }
 
 #box {
@@ -23,7 +23,7 @@ body {
   height: auto;
   width: auto;
   padding: 2em;
-  color: #d1fcee;
+  color: #008b8b;
   text-align: center;
   overflow: visible;
 }
