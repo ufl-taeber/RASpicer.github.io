@@ -5,13 +5,13 @@
 header {
   margin: 0px;
   padding: 20px;
-  background: #0f4880;
+  background: #719CC0;
   color:white;
   overflow: auto;
 }
 
 body {
-    background-color: #FFE2D3;
+    background-color: #0f4880;
 }
 
 #box {
