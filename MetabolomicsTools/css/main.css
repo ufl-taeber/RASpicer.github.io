@@ -66,12 +66,30 @@ li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1em;
+  float: left;
 }
 
 ul {
   display:table;
   margin:0 auto;
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #007a7c;
+}
+
 
 /***************************
     Google Table CSS
