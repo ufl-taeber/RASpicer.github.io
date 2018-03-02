@@ -1,10 +1,18 @@
 /***************************
     Site Design CSS
 ***************************/
+
+header {
+  margin: 0px;
+  padding: 20px;
+  background: #0f4880;
+  color:white;
+  overflow: auto;
+}
+
 body {
     background-color: #d1fcee;
 }
-
 
 #box {
   margin: auto;
@@ -62,28 +70,28 @@ a:visited {
 .google-visualization-table-tr-even,
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
-  background-color: #344a68 !important;
+  background-color: #0f4880 !important;
   color: #fff !important;
 }
 
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
-  background-color: #344a68 !important;
+  background-color: #0f4880 !important;
   color: #fff !important;
 }
 
 .google-visualization-table-tr-sel,
 .google-visualization-table-tr-sel td,
 .google-visualization-table-tr-sel-nonstrict {
-  background-color: #e5b0ba !important;
+  background-color: #77A6F7 !important;
 }
 
 
 .google-visualization-table-tr-head,
 .google-visualization-table-tr-head td,
 .google-visualization-table-tr-head-nonstrict {
-  background-color: #4D6D9A !important;
+  background-color: #007a7c !important;
   background-image: none !important;
   color: #fff !important;
 }
