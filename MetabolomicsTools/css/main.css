@@ -81,6 +81,10 @@ li a {
     text-decoration: none;
 }
 
+li a:hover{
+    background-color: #719CC0;
+}
+
 li a:hover:not(.active) {
     background-color: #719CC0;
 }
