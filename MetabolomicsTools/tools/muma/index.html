@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>muma</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">muma</h1>
+<p>Version: #REF!</p>
+
+<h3>Website</h3>
+<a href='https://cran.r-project.org/web/packages/muma/index.htmltarget='_BLANK' style="color:#0f4880">https://cran.r-project.org/web/packages/muma/index.html</a>
+
+<h3>Description</h3>
+<p>Metabolomics Univariate and Multivariate Analysis (muma - a CRAN package) provides a pipeline for analysis, including preprocessing, statistical analysis and metabolite identification. It also specifically provides a number of analysis tools for NMR data - statistical total correlation spectroscopy (STOCSY) and ratio analysis of NMR spectroscopy (RANSY). Initially a dataset is read and then screened for missing values. Four imputation methods are provided: mean, minimum, half-minimum and zero. Normalisation is then performed for the whole spectra, every variable is transformed into a fraction of the total intensity of the spectrum. A range of scaling techniques are then available: Auto, Pareto, Range, Vast and Medium, with each variable being mean centred before scaling. It provides a variety of both univariate (Welch's T test and Wilcoxon-Mann Whitney) and multivariate (PCA, PLS-DA and OPLS-DA) statistical techniques, as well a method of evaluating the clustering power of PCA. For univariate analysis a decision tree algorithm performs hypothesis tests on a single variable - first Shapiro Wilk's test is used to assess whether the data are normally distributed or not, then either Welch's T test or Wilcoxon-Mann Whitney test are performed. Benjamini-Hochberg multiple testing correction can then be applied. Correlation heatmaps can be created to visualise the data. With NMR data, these heatmaps are referred to as STOCSY and correlations >0.95 indicate a structural relationship between peaks belonging to the same molecule. RANSY is also designed to show the structural relationships between peaks. </p>
+
+<h3>Functionality</h3>	
+<p>Post-processing, Statistical Analysis</p>
+
+<h3>Instrument Data Type</h3>	
+<p>MS, NMR</p>
+
+<h3>Approaches</h3>	
+<p></p>
+
+<h3>Computer Skills</h3>	
+<p>Advanced</p>
+
+<h3>Software Type</h3>	
+<p>Package</p>
+
+<h3>Interface</h3>	
+<p>Command line interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux, Mac OS, Windows</p>
+
+<h3>Language</h3>	
+<p>R</p>
+
+<h3>Dependencies</h3> 	
+<p>car, pdist, pls, gplots, mvtnorm, robustbase, gtools, bitops, caTools, pcaPP, rrcov</p>
+
+<h3>Input Formats - Open</h3>	
+<p>.csv</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>-</p>
+
+<h3>Published</h3>	
+<p>2012</p>
+
+<h3>Last Updated</h3>	
+<p>2015</p>
+
+<h3>License</h3>	
+<p>GPL-2</p>
+
+<h3>Paper</h3>	
+<a href='http://www.eurekaselect.com/107837/articletarget='_BLANK' style="color:#0f4880">http://www.eurekaselect.com/107837/article</a>
+
+
+
+<h3>PMID</h3>
+<p>-</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>TracMass2</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">TracMass2</h1>
+<p>Version: ?</p>
+
+<h3>Website</h3>
+<a href='http://pubs.acs.org/doi/suppl/10.1021/ac403905htarget='_BLANK' style="color:#0f4880">http://pubs.acs.org/doi/suppl/10.1021/ac403905h</a>
+
+<h3>Description</h3>
+<p>This software provides preprocessing of centroid LC-MS and GC-MS data. A tracking algorithm is used for the creation of pure ion chromatograms (PICs). First, PICs are assigned to every data point in the first scan then in the next scan PICs are assigned to data points by a greedy nearest neighbour strategy - if the m/z is sufficiently close to the PIC of the previous scan, the data point is assigned to the same PIC. For peak detection, each PIC is convolved with 2 zero area filters of different widths, with positions of maxima corresponding to peak locations. For each data point the noise level is estimated as the difference between the PIC and its smooth (smoothing is performed by convoluting with a Gaussian filter and weighting for standard deviation, which is also Gaussian but a different width). A correction factor is computed from the local estimate of noise and is used to prevent a too narrow filter from adapting to the noise. Next is the alignment procedure, which is split into 4 parts: clustering, warping, second clustering and generalised fuzzy Hough transform (GFHT) to resolve ambiguous clusters (which is optional). The peaks from all samples are scaled on the mass and time axis by their expected uncertainty and connected by Delaunay triangulation, with connections longer than 1 being removed. Remaining peaks are considered to belong to the same cluster. Clusters containing one peak are used as landmark peaks for warping. P-splines are fitted to the retention time deviations from the means of these clusters and retention times of all peaks are adjusted by retention time shifts from the warping algorithm. Clustering is then again performed. Finally GFHT is performed independently for each cluster. A GUI is provided for the inspection of raw data. The software is available to download in the paper's supporting information.</p>
+
+<h3>Functionality</h3>	
+<p>Preprocessing</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS/Centroid LC-MS
+GC-MS</p>
+
+<h3>Approaches</h3>	
+<p>Untargeted</p>
+
+<h3>Computer Skills</h3>	
+<p>Advanced</p>
+
+<h3>Software Type</h3>	
+<p>MATLAB Package</p>
+
+<h3>Interface</h3>	
+<p>Command line interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux, Mac OS, Windows</p>
+
+<h3>Language</h3>	
+<p>MATLAB</p>
+
+<h3>Dependencies</h3> 	
+<p>MATLAB (≥ R2010b)</p>
+
+<h3>Input Formats - Open</h3>	
+<p>mzData, mzML, mzXML, netCDF</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>-</p>
+
+<h3>Published</h3>	
+<p>2010</p>
+
+<h3>Last Updated</h3>	
+<p>2014</p>
+
+<h3>License</h3>	
+<p>GPL (≥ 3)</p>
+
+<h3>Paper</h3>	
+<a href='https://www.ncbi.nlm.nih.gov/pubmed/24611572target='_BLANK' style="color:#0f4880">https://www.ncbi.nlm.nih.gov/pubmed/24611572</a>
+
+
+
+<h3>PMID</h3>
+<p>24611572</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+

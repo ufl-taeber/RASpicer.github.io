@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>ProbMetab</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">ProbMetab</h1>
+<p>Version: 1.0</p>
+
+<h3>Website</h3>
+<a href='http://labpib.fmrp.usp.br/methods/probmetab/target='_BLANK' style="color:#0f4880">http://labpib.fmrp.usp.br/methods/probmetab/</a>
+
+<h3>Description</h3>
+<p>This package performs compound assignment on already peak grouped LC-MS data using bayesian modeling. It suggests using a combination of XCMS, CAMERA and mzMatch for data preprocessing. It provides the functionality to combine molecular ion by CAMERA annotation between acquision modes. A non-redundant set of molecular ion annotations can then be extracted. Included in the package is a database of compounds to reactions from KEGG (there is also the option a user importing their own compound to reaction database). If an assement of carbon offset is available this can be used to improve predictions. The likelihood of each mass to compound assignment is then calculated, using carbon isotope ratio information if available. The reactions between the identified metabolites are then codified. Analysis flux can also be incorporated at this stage. A reaction matrix can then be created from the annotated molecular ions and the database. The ratio between observed and theoretical isotope patterns is then calculated (if carbon labelling is available). The likelihood of each mass to compound assignment is then calculated using mass accuracy and isotopic pattern if available. The posterior probabilities are then calculated according to the model (using the Gibbs sampler). At this stage a table of identified metabolites can be exported as an R matrix. Identified metabolites are then mapped to pathways that can be visualised in cytoscape. </p>
+
+<h3>Functionality</h3>	
+<p>Annotation/Level 3 - Tentative Candidates</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS</p>
+
+<h3>Approaches</h3>	
+<p></p>
+
+<h3>Computer Skills</h3>	
+<p>Advanced</p>
+
+<h3>Software Type</h3>	
+<p>R Package</p>
+
+<h3>Interface</h3>	
+<p>Command line interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux, Mac OS, Windows</p>
+
+<h3>Language</h3>	
+<p>R</p>
+
+<h3>Dependencies</h3> 	
+<p>CAMERA, graph, RCytoscape, multtest, RcppAramadillo, hwriter, GeneNet, RCurl, XML, rjson</p>
+
+<h3>Input Formats - Open</h3>	
+<p>mzData, mzML, mzXML, netCDF</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p></p>
+
+<h3>Published</h3>	
+<p>2013</p>
+
+<h3>Last Updated</h3>	
+<p>2013</p>
+
+<h3>License</h3>	
+<p>GPL</p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/24443383target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/24443383</a>
+
+
+
+<h3>PMID</h3>
+<p>24443383</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+

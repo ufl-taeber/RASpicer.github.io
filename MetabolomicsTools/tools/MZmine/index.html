@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>MZmine</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">MZmine</h1>
+<p>Version: 2.31</p>
+
+<h3>Website</h3>
+<a href='http://mzmine.github.io/target='_BLANK' style="color:#0f4880">http://mzmine.github.io/</a>
+
+<h3>Description</h3>
+<p>MZmine provides a toolkit of modules for MS data analysis. It now includes modules for: raw data import, raw data processing, peak detection, peak list alignment, peak identification, visualisation, normalisation and statistical analysis. It is able to process profile, centroid and MSn data. There are a number of different algorithms for peak detection: Local maxima - which detects the local maxima of the spectrum, Recursive threshold - which reduces false positive by not detecting noise peaks, Wavelet transform - which processing each spectra by matching them to the Mexican hat wavelet model using continuous wavelet transformation, Exact Mass - for high quality spectra, which uses FWHM to determine the centre of each peak, Centroid - for centroided data, which detects all peaks above a specified noise level and GridMass. There is an optional filter for FT-ICR-MS data that builds a theoretical model (Gaussian or Lorentzian) with a given mass resolution around each peak and removes noise below this model. After this m/z features are connected into a chromatograph. Individual peaks are then deconvoluted with a number of algorithms provided for this purpose: Baseline cut-off - peaks must have intensity and time spans over given ranges, Noise amplitude - the same as Baseline cut-off but the baseline is initially set to the level where the noise is most concentrated and Local minimum search identifies the local minima as the borders between peaks. There is an extra module that allows the noisy deconvoluted data to be fit to an ideal peak model. For alignment the RANSAC (random sample consensus) algorithm is used. It uses the RANSAC and alignment windows, consisting of the same m/z threshold but different rt thresholds. A scatterplot of all candidate alignments is made and the RANSAC algorithm is used to build a candidate model of alignment. LOESS is then applied and the correct retention time shift is predicted and then the peaks are then joined. The old Join aligner algorithm is also available. A number of options are then available: missing data filling, isotope detection, filtering and normalisation. For peak annotation, CAMERA can be used. Peaks can either be identified via a custom database or by searching online databases (PubChem, KEGG, METLIN, HMDB, ChemSpider, PlantCyc, LipidMaps and MassBank all directly interface with MZmine). NIST can also be directly interfaced. For statistical analysis a number of options are available: PCA, clustering, heatmaps, curvilinear distance analysis (CDA), Sammon's Projection and Log Ratio Plots. GridMass is a new feature detection algorithm for LCHR-MS data. LC-MS data can be represented on a 2D plot of m/z against retention time, with colour matching intensity. A grid of equally spaced probes is generated to cover the entire area. Each probe then finds the local maximum and it is then moved to this location to search for a higher intensity value. This process is repeated until no higher value can be detected, and the current probe location is then marked as a peak.</p>
+
+<h3>Functionality</h3>	
+<p>Workflow</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS/LC-MS/MS
+CE-MS
+GC-MS</p>
+
+<h3>Approaches</h3>	
+<p>Untargeted</p>
+
+<h3>Computer Skills</h3>	
+<p>Medium</p>
+
+<h3>Software Type</h3>	
+<p>Toolkit</p>
+
+<h3>Interface</h3>	
+<p>Graphical User Interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux, Mac OS, Windows</p>
+
+<h3>Language</h3>	
+<p>Java, R</p>
+
+<h3>Dependencies</h3> 	
+<p>JRE ≥ 1.7, R, Rserve, ptw, gplots, baseline, hyperSpec, ggplot2, xcms, CAMERA, PROcess</p>
+
+<h3>Input Formats - Open</h3>	
+<p>mzData, mzML, mzXML, netCDF</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>Thermo Fisher Scientific .raw, waters .raw, Aglient .csv</p>
+
+<h3>Published</h3>	
+<p>2005</p>
+
+<h3>Last Updated</h3>	
+<p>2018</p>
+
+<h3>License</h3>	
+<p>GPL-2</p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/20650010target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/20650010</a>
+
+
+
+<h3>PMID</h3>
+<p>20650010</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+

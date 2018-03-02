@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>MRM-DIFF</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">MRM-DIFF</h1>
+<p>Version: -</p>
+
+<h3>Website</h3>
+<a href='http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index2.htmltarget='_BLANK' style="color:#0f4880">http://prime.psc.riken.jp/Metabolomics_Software/MRMPROBS/index2.html</a>
+
+<h3>Description</h3>
+<p>Multiple reaction monitoring-based differential (MRM-DIFF) allows for the analysis of lipidomics LC-MS MRM assays. It relies on pooled QC samples, for the LOES/cubic spline method. From all the pooled QC samples, one is chosen as a reference (this is the chromatograph whose gravity is closest to the midpoint). Using correlation optimized warping (COW), all other chromatograms are aligned to this reference. A user defined library of retention time, MRM transitions and molecular formulas is used for metabolite identification and to estimate isotopes. A peak detection algorithm that uses the abundance of detected peaks for multivariate analysis is implemented. Isotopic peak abundance is resolved and signal intensity drifts are corrected using LOESS and cubic spline normalisation. Alternatively metabolite concentrations can be normalised to an internal standard. Peaks are detected by first finding the median amplitude (AF), first-order derivative (FF) and second-order derivative (SF) (the derivatives are calculated using Savitzky-Golay filter). The maximum amplitude difference between two adjacent peaks is detected, as well as the maxima between the first and second order derivatives. The edges of the peaks are recognised when the amplitude and first order derivative are both greater than AF and FF in two adjacent points and the tip is recognised when the sign of the first derivative changes and the second order derivative is less than SF. Metabolite identification is based on retention time accuracy. To calculate isotopic abundances and annotate peaks, the theoretical isotopic ratio of the molecular formula is calculated. OFFLINE</p>
+
+<h3>Functionality</h3>	
+<p>Preprocessing</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS/LC-QqQ-MS/LC-QqQ-MS/MS</p>
+
+<h3>Approaches</h3>	
+<p>Lipidomics</p>
+
+<h3>Computer Skills</h3>	
+<p>Basic</p>
+
+<h3>Software Type</h3>	
+<p>Package</p>
+
+<h3>Interface</h3>	
+<p>Graphical User Interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Windows</p>
+
+<h3>Language</h3>	
+<p>C#</p>
+
+<h3>Dependencies</h3> 	
+<p>≥ .NET Famework 4.0, ≥4GB RAM</p>
+
+<h3>Input Formats - Open</h3>	
+<p>Reifycs .ABF, .mzML</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p></p>
+
+<h3>Published</h3>	
+<p>-</p>
+
+<h3>Last Updated</h3>	
+<p>2014</p>
+
+<h3>License</h3>	
+<p></p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/25688256target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/25688256</a>
+
+
+
+<h3>PMID</h3>
+<p>25688256</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+
