@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>FeatureFinderMetabo</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">FeatureFinderMetabo</h1>
+<p>Version: 2.2.0</p>
+
+<h3>Website</h3>
+<a href='http://ftp.mi.fu-berlin.de/pub/OpenMS/release-documentation/html/TOPP_FeatureFinderMetabo.htmltarget='_BLANK' style="color:#0f4880">http://ftp.mi.fu-berlin.de/pub/OpenMS/release-documentation/html/TOPP_FeatureFinderMetabo.html</a>
+
+<h3>Description</h3>
+<p>This provides label-free quantification of metabolites of LC-MS data. It is available as part of OpenMS. There are two stages to the algorithm: mass trace detection and feature assembly. Each data set of peaks is sorted by decreasing intensity and peaks that are below a user-defined threshold are filtered. Each of the most intense peaks is then considered a potential seeding point for mass trace construction. Mass traces are features with a similar m/z, which occur in adjacent scans. The mass traces are extended along the retention time axis from the seeding point, in both directions. This results in more peaks with similar m/z being recruited into the mass trace, depending upon an intensity-weighted Gaussian model (that reflects that low-intensity peaks are less reliable than higher intensity peaks). The algorithm is aborted when a specified number of scans have been searched without finding an adequate peak. Once a peak has been added to a trace, it cannot be used as a seeding point or be added to another trace. At this stage the mass traces need to be separated, so that each trace only contains a single feature. LOWESS with a polynomial of degree 2 is used as a smoothing technique. It is then tested whether or not peaks are sufficiently separated in order to be considered separate peaks. If peaks need to be separated, the minima between the 2 chromatographic peaks is used as a splitting point. During feature assembly the aim is to find features originating from the same progenitor metabolite and to cluster these adducts. To identify isotopes a HiRes generated library of isotopic masses is used. A scoring function is used to assess how likely it is a set of mass traces are caused by the same metabolite based on precomputed mass difference distributions of potential metabolite compositions. A correlation similarity score is used to assess whether mass traces grouped by m/z are also compatible in their elution times (it must be at least 70% full width at half-maximum). For each hypothesis a combined score is calculated. To give preference to high intensity signals, the scores are weighted to peak area normalised by the total sum of mass traces. A list of features is then produced that should not contain multiple peaks for a single metabolite.</p>
+
+<h3>Functionality</h3>	
+<p>Preprocessing</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS/Centroid LC-MS</p>
+
+<h3>Approaches</h3>	
+<p></p>
+
+<h3>Computer Skills</h3>	
+<p>Advanced/ Medium</p>
+
+<h3>Software Type</h3>	
+<p>Package</p>
+
+<h3>Interface</h3>	
+<p>Command line interface/ Graphical User Interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux</p>
+
+<h3>Language</h3>	
+<p>C++</p>
+
+<h3>Dependencies</h3> 	
+<p>-</p>
+
+<h3>Input Formats - Open</h3>	
+<p>ConsensusXML, DTA, DTA2D, EDTA, featureXML, KROENIK, MGF, ms2, mzML, mzXML, mzData, PEPLIST, TSV</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>fid/XMASS</p>
+
+<h3>Published</h3>	
+<p>2014</p>
+
+<h3>Last Updated</h3>	
+<p>2017</p>
+
+<h3>License</h3>	
+<p>Three-clause BSD license</p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/24176773target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/24176773</a>
+
+
+
+<h3>PMID</h3>
+<p>24176773</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<style> 
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>Ideom</title>
+  <meta content="List of tools developed for the analysis of metabolomics data" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background-color: #d1fcee;
+    margin: 0px;
+  	padding: 0px;
+}
+
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #007a7c;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #008b8b;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.65em;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin: 0px;
+  	padding: 0px;
+	background: #0f4880;
+	color:white;
+	overflow: auto;
+}
+
+footer {background: #719CC0;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+
+</style>
+</head>
+
+
+
+<div class="flex-container">
+<header>
+ <a href='https://raspicer.github.io/MetabolomicsTools/'target='_BLANK' style="text-decoration:none">
+  <h2 style="color:white;">Metabolomics Tools Wiki</h2>
+  </a>
+</header>
+  
+<article class="article">
+<h1 style="color:#0f4880;">Ideom</h1>
+<p>Version: 19</p>
+
+<h3>Website</h3>
+<a href='http://mzmatch.sourceforge.net/ideom.phptarget='_BLANK' style="color:#0f4880">http://mzmatch.sourceforge.net/ideom.php</a>
+
+<h3>Description</h3>
+<p>IDEOM is an excel template which provides a GUI with implementations of mzMatch and xcms, along with macros for noise-filtering, metabolite identification and statistical analysis. msconvert can also be directly interfaced. Raw peaks can be extracted from within IDEOM or peak-picked data in the .txt or .csv format can be imported. Up to 10 internal/external standards can be entered and treatment/control groups can be entered for statistical analysis. Peaks are first picked with centWave and then mzMatch is used to convert them to .peakml. mzMatch can then be used to group peaks, filter peaks and annotate groups of related peaks. Normalisation can then be performed using TIC, median or used defined values (although this is not recommended for LC-MS). RT of authentic standards can be entered for metabolite identification. For metabolite identification, a metabolite library is also provided (consisting of KEGG, MetaCyc). To correct for mass calibration errors, a data-dependent polynomial mass recalibration step can be applied. There is then optionally tools for merging dual-polarity data, chemical formula determination for unidentified mass and stable isotope tracking. Specific metabolites can also be analysed in a targeted manner. Conditions can be statistically compared using univariate statistics: mean, relative intensity, SD, t-test and Fisher ratio. OFFLINE</p>
+
+<h3>Functionality</h3>	
+<p>Preprocessing</p>
+
+<h3>Instrument Data Type</h3>	
+<p>LC-MS</p>
+
+<h3>Approaches</h3>	
+<p></p>
+
+<h3>Computer Skills</h3>	
+<p>Medium</p>
+
+<h3>Software Type</h3>	
+<p>Excel Template</p>
+
+<h3>Interface</h3>	
+<p>Graphical User Interface</p>
+
+<h3>Operating System (OS)</h3>	
+<p>Unix/Linux, Mac OS, Windows</p>
+
+<h3>Language</h3>	
+<p>R</p>
+
+<h3>Dependencies</h3> 	
+<p>Excel (≥ 2007), R</p>
+
+<h3>Input Formats - Open</h3>	
+<p>csv, mzXML, txt</p>
+
+<h3>Input Formats - Proprietary</h3>	
+<p>Agilent .d, Thermo Fisher Scientific .raw, Bruker Daltonics .d, waters .raw</p>
+
+<h3>Published</h3>	
+<p>2012</p>
+
+<h3>Last Updated</h3>	
+<p>2015</p>
+
+<h3>License</h3>	
+<p>LGPL-2</p>
+
+<h3>Paper</h3>	
+<a href='http://www.ncbi.nlm.nih.gov/pubmed/22308147target='_BLANK' style="color:#0f4880">http://www.ncbi.nlm.nih.gov/pubmed/22308147</a>
+
+
+
+<h3>PMID</h3>
+<p>22308147</p>
+</article>
+
+</div>
+
+</body>
+</html>
+
+
