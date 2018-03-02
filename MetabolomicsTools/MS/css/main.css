@@ -1,10 +1,18 @@
 /***************************
     Site Design CSS
 ***************************/
+
+header {
+  margin: 0px;
+    padding: 0px;
+  background: #0f4880;
+  color:white;
+  overflow: auto;
+}
+
 body {
     background-color: #d1fcee;
 }
-
 
 #box {
   margin: auto;
@@ -28,7 +36,19 @@ h1 {
   letter-spacing: -4px;
   margin: 0.8rem 0 0 0;
   padding-bottom: 5px;
+  color: #007a7c;
 }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -46,11 +66,14 @@ p.small {
 
 a,
 a:visited,
-a:hover {
-  color: #333;
-  font-weight: 600;
+a:link {
+    color: white;
+    text-decoration: none;
+},
+a:visited {
+   color: #d62837;
+    text-decoration: none;
 }
-
 
 /***************************
     Google Table CSS
@@ -59,27 +82,28 @@ a:hover {
 .google-visualization-table-tr-even,
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
-  background-color: #344a68 !important;
+  background-color: #0f4880 !important;
   color: #fff !important;
 }
 
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
-  background-color: #344a68 !important;
+  background-color: #0f4880 !important;
   color: #fff !important;
 }
 
 .google-visualization-table-tr-sel,
 .google-visualization-table-tr-sel td,
 .google-visualization-table-tr-sel-nonstrict {
-  background-color: #333 !important;
+  background-color: #77A6F7 !important;
 }
+
 
 .google-visualization-table-tr-head,
 .google-visualization-table-tr-head td,
 .google-visualization-table-tr-head-nonstrict {
-  background-color: #4D6D9A !important;
+  background-color: #007a7c !important;
   background-image: none !important;
   color: #fff !important;
 }

@@ -4,8 +4,8 @@
 
 header {
   margin: 0px;
-  padding: 20px;
-  background: #719CC0;
+    padding: 0px;
+  background: #0f4880;
   color:white;
   overflow: auto;
 }
@@ -23,7 +23,7 @@ body {
   height: auto;
   width: auto;
   padding: 2em;
-  color: #008b8b;
+  color: #719CC0;
   text-align: center;
   overflow: visible;
 }
@@ -36,7 +36,19 @@ h1 {
   letter-spacing: -4px;
   margin: 0.8rem 0 0 0;
   padding-bottom: 5px;
+  color: #007a7c;
 }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.3em;
+  letter-spacing: -4px;
+  margin: 0.8rem 0 0 0;
+  padding-bottom: 5px;
+}
+
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -54,55 +66,14 @@ p.small {
 
 a,
 a:visited,
-a:hover {
-  color: #77A6F7;
-  font-weight: 600;
-}
-
-li {
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-}
-
-ul {
-  display:table;
-  margin:0 auto;
-}
-
-li a {
-    display: block;
+a:link {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-decoration: none;
+},
+a:visited {
+   color: #d62837;
     text-decoration: none;
 }
-
-li a:hover{
-    background-color: #77A6F7;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #77A6F7;
-    color: white;
-}
-
-.active {
-    background-color: #007a7c;
-}
-
-nav {
-    background-color: #0f4880;
-    list-style: none;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-}
-
 
 /***************************
     Google Table CSS
@@ -111,41 +82,28 @@ nav {
 .google-visualization-table-tr-even,
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
-  background-color: #fff !important;
-  color: #333 !important;
+  background-color: #0f4880 !important;
+  color: #fff !important;
 }
 
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
-  background-color: #fff !important;
-  color: #333 !important;
+  background-color: #0f4880 !important;
+  color: #fff !important;
 }
 
 .google-visualization-table-tr-sel,
 .google-visualization-table-tr-sel td,
 .google-visualization-table-tr-sel-nonstrict {
-  background-color: #333 !important;
-  color: #fff !important;
+  background-color: #77A6F7 !important;
 }
 
-.google-visualization-table-tr-over,
-.google-visualization-table-tr-over td,
-.google-visualization-table-tr-over-nonstrict {
-  background-color: #333 !important;
-  color: #fff !important;
-}
-
-.google-visualization-table-td,
-.google-visualization-table-th {
-  border: 1px solid #333 !important;
-  color: #fff !important;
-}
 
 .google-visualization-table-tr-head,
 .google-visualization-table-tr-head td,
 .google-visualization-table-tr-head-nonstrict {
-  background-color: #333 !important;
+  background-color: #007a7c !important;
   background-image: none !important;
   color: #fff !important;
 }
