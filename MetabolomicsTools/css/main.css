@@ -153,18 +153,3 @@ nav {
 .google-visualization-table .gradient {
   background-image: none !important;
 }
-
-
-/***************************
-    Text Selection CSS
-***************************/
-
-::-moz-selection {
-  color: #fff;
-  background: #333;
-}
-
-::selection {
-  color: #fff;
-  background: #333;
-}
